@@ -1,0 +1,115 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  color: #fff;
+  padding: 20px;
+}
+
+#tweet-feed {
+  flex: 1;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-style: solid;
+  overflow-y: auto;
+}
+
+.map-and-weather {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 2;
+  margin-left: 10px;
+}
+
+#map {
+  flex: 3;
+  height: 700px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+#weather {
+  /* Weather styles */
+  position: absolute;
+  bottom: 0; /* Adjust the value to control how far to the right it extends */
+  width: 200px; /* Set the width of the weather panel */
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  align-items: center; /* Center the items vertically within the navbar */
+  color: #fff;
+  padding: 20px;
+}
+
+#about-button {
+  margin-left: 20px;
+}
+
+#login {
+  margin-left: 20px
+}
+
+/* Tweet feed styles */
+#tweet-feed {
+  flex: 1;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-style: solid;
+  overflow-y: auto;
+ 
+}
+
+.tweet-box {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* directions modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  width: 15%;
+  height: 15%;
+  overflow-y: scroll;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+/* about container */
+
+.about-container {
+
+  text-align: center;
+
+}
+
+#content {
+  border-style: solid;
+}
+

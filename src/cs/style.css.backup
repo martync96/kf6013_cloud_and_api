@@ -1,0 +1,130 @@
+#map{
+    height: 500px;
+    width: 500px;
+}
+
+/* grid configuration */
+h1{ 
+  grid-area: headerLeft; 
+}
+
+#mainRight{
+  width: 500px;
+}
+
+#header{
+  background-color: #d0d3d4;
+}
+
+#login, #logout{ 
+  grid-area: header;
+  text-align: right;
+  font-size: 32px;
+}
+
+#mainRight { 
+  grid-area: mainRight;
+}
+
+#map { 
+  grid-area: mainRight;
+}
+
+#directions { 
+  grid-area: main; 
+}
+
+#distance { 
+  text-align: left;
+  grid-area: mainRight; 
+}
+
+#weatherHeading {
+  display: inline;
+}
+
+#weatherLocation {
+  display: inline;
+}
+
+#tweetFeed { 
+  grid-area: mainLeft;
+}
+
+#oAuth-content{
+  grid-area: main;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'headerLeft header header header header headerRight'
+    'sideLeft mainLeft main main mainRight sideRight'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color:#d6d2c4;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.top-container {
+  
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.middle-container {
+  padding-top: 50px;
+  padding-bottom: 800px;
+  padding-left: 80px;
+  padding-right: 80px;
+  background-color: #d6d2c4;
+}
+
+.bottom-container {
+  margin-top: 60px;
+  padding: 20px;
+  
+}
+
+.logout{
+  float: right;
+  margin-left: auto;
+  padding-right: 50px;
+}
+
+#title{
+  float: left;
+  padding-left: 50px;
+}
+
+#headings{
+  text-align: center;
+  padding: auto 20px auto 20px;
+}
+
+#content{
+  margin: auto 80px auto 80px;
+}
+
+#home-button{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* end grid css */
+
+#weather > div{
+  display: flex;
+  align-items: center;
+}
+
+

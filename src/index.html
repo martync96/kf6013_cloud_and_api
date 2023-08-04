@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map</title>
+    <link rel="stylesheet" href="cs/style.css">
+    <script type="text/javascript" src="js/initMap.js"></script>
+</head>
+<body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <nav class="navbar">
+        <a href="index.html" id="home-button">
+            <h2>Home</h2>
+        </a>
+        <a href="pages/about.html" id="about-button">
+            <h2 id="about">About</h2>
+        </a>
+        <a href="/oauth/login.php" id="login">
+            <h2>Sign in with Google OAuth</h2>
+        </a>
+    </nav>
+    <div class="container">
+        <div id="tweet-feed">
+            <h3>Latest Tweets from the UK</h3>
+        </div>
+        <div class="map-and-weather">
+            <div id="map">
+                <script src="js/initMap.js"></script>
+                <script async defer
+                    src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCn_BsG8u9vl5pnJaLtV4VC2qOANLLurxY&callback=initMap">
+                    </script>
+            </div>
+            <div id="weather">
+                <h2 id="weatherHeading">The weather at <p id="weatherLocation">Living Planet HQ</p>
+                </h2>
+                <div id="location">
+                    <h4>Nearest Weather Station: </h4>
+                    <p id="station-name"></p>
+                </div>
+                <div id="clouds-div">
+                    <h4>Clouds: </h4>
+                    <p id="clouds"></p>
+                </div>
+                <div id="humidity-div">
+                    <h4>humidity: </h4>
+                    <p id="humidity"></p>
+                </div>
+                <div id="wind">
+                    <h4>Windspeed: </h4>
+                    <p id="windspeed"></p>
+                </div>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="modal-content">
+                    <div id="distance"></div>
+                    <div id="directions"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
